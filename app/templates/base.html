@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ホーム</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    {% include "_navbar.html"%}
+
+    {% block main %}
+    コンテンツがありません。
+    {% endblock %}
+　
+    {% include "_footer.html"%}
+</body>
+</html>
